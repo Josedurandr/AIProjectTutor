@@ -1,3 +1,4 @@
 langcorn
 pymongo
 nltk
+pytest
