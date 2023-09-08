@@ -1,0 +1,3 @@
+langcorn
+pymongo
+nltk
