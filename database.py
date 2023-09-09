@@ -23,7 +23,7 @@ try:
 except Exception as e:
     print(e)
     print(uri)
-    exit(1)
+    "exit(1)"
     
 
 Database = client.get_database('proyect-tutorIA')
