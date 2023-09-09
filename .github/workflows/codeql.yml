@@ -11,6 +11,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      DATABASE_URL: ${{secret.DATABASE_URL}}
+      API_IA: ${{secret.API_IA}}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
@@ -19,10 +22,7 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: Database connection
-        run: python database.py 
-      
-      - name: Verifica el código de salida
-        run: exit ${{ steps.my_job.outcome == 'failure' }}
+        run: python database.py
 
       - name: Install pytest
         run: pip install pytest
