@@ -9,6 +9,9 @@ on:
       - main
 
 jobs:
+ env:
+   DATABASE_URL: ${{secret.DATABASE_URL}}
+   API_IA: ${{secret.API_IA}}
   build:
     runs-on: ubuntu-latest
 
