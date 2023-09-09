@@ -2,3 +2,4 @@ langcorn
 pymongo
 nltk
 pytest
+python-dotenv
