@@ -21,14 +21,13 @@ print(uri)
 try:
     client.admin.command('ping')
     print("Pinged your deployment. You successfully connected to MongoDB!")
+    Database = client.get_database('proyect-tutorIA')
+    CTGrammar = Database.get_collection('Grammar')
+    CTText = Database.get_collection('Text')
+    CTUser = Database.get_collection('User')
+    CTVocabulary = Database.get_collection('Vocabulary')
 except Exception as e:
     print(e)
     
     
 
-Database = client.get_database('proyect-tutorIA')
-
-CTGrammar = Database.get_collection('Grammar')
-CTText = Database.get_collection('Text')
-CTUser = Database.get_collection('User')
-CTVocabulary = Database.get_collection('Vocabulary')
