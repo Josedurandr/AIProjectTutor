@@ -7,14 +7,14 @@ on:
   pull_request:
     branches:
       - main
+env:
+  DATABASE_URL: ${{secret.DATABASE_URL}}
+  API_IA: ${{secret.API_IA}}
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      DATABASE_URL: ${{secret.DATABASE_URL}}
-      API_IA: ${{secret.API_IA}}
-      
+
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
