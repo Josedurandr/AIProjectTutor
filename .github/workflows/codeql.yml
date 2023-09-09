@@ -20,6 +20,9 @@ jobs:
 
       - name: Database connection
         run: python database.py 
+      
+      - name: Verifica el código de salida
+        run: exit ${{ steps.my_job.outcome == 'failure' }}
 
       - name: Install pytest
         run: pip install pytest
