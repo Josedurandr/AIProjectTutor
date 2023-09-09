@@ -15,6 +15,7 @@ uri = os.getenv('DATABASE_URL')
 
 # Create a new client and connect to the server
 client = MongoClient(uri, server_api=ServerApi('1'))
+print(uri)
 
 # Send a ping to confirm a successful connection
 try:
@@ -22,8 +23,7 @@ try:
     print("Pinged your deployment. You successfully connected to MongoDB!")
 except Exception as e:
     print(e)
-    print(uri)
-    "exit(1)"
+    
     
 
 Database = client.get_database('proyect-tutorIA')
