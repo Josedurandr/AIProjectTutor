@@ -22,7 +22,7 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: env
-       run: echo "es ${{vars.DATABASE_URL}}"
+        run: echo "es ${{vars.DATABASE_URL}}"
 
       - name: Database connection
         run: python database.py
