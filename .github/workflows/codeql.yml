@@ -19,7 +19,7 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: Database connection
-        run: python .\database.py 
+        run: python database.py 
 
       - name: Install pytest
         run: pip install pytest
