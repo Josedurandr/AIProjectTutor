@@ -21,6 +21,7 @@ try:
     print("Pinged your deployment. You successfully connected to MongoDB!")
 except Exception as e:
     print(e)
+    exit()
 
 Database = client.get_database('proyect-tutorIA')
 
