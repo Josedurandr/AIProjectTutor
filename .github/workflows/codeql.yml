@@ -12,7 +12,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      DATABASE_URL: ${{vars.DATABASE_URL}}
+      DATABASE_URL: ${{env.DATABASE_URL}}
 
     steps:
       - uses: actions/checkout@v2
@@ -22,7 +22,7 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: env
-        run: echo "es ${{vars.DATABASE_URL}}"
+        run: echo "es ${{env.DATABASE_URL}}"
 
       - name: Database connection
         run: python database.py
