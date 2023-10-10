@@ -1,3 +1,18 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #1a1a1a; /* O cualquier color de fondo que desees */
+}
+
 form {
   max-width: 300px;
   margin: auto;
@@ -28,7 +43,8 @@ button {
   color: #050505;
   border: none;
   cursor: pointer;
-  border-radius: 27.5px; /* Asegúrate de agregar 'px' o cualquier otra unidad válida aquí */
+  border-radius: 27.5px;
+  width: 325px;
 }
 
 button:hover {
@@ -37,4 +53,10 @@ button:hover {
 
 button:active {
   background-color: #0e544b;
+}
+
+.ForgotPassword {
+  color: #20bba9;
+  text-align: right;
+  width: 100%;
 }

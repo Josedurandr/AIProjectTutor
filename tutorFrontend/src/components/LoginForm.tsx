@@ -15,22 +15,27 @@ const LoginForm: React.FC = () => {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="username">Nombre de usuario</label>
+        <label htmlFor="username"></label>
         <input
           type="text"
           id="username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
+          placeholder="Email"
         />
       </div>
       <div>
-        <label htmlFor="password">Contraseña</label>
+        <label htmlFor="password"></label>
         <input
           type="password"
           id="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          placeholder="Password"
         />
+        <div className="ForgotPassword">
+          <a>Forgot Password?</a>
+        </div>
       </div>
       <button type="submit">Sign in</button>
     </form>
