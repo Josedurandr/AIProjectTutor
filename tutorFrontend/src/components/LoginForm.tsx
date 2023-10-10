@@ -38,6 +38,11 @@ const LoginForm: React.FC = () => {
         </div>
       </div>
       <button type="submit">Sign in</button>
+      <div className="SingUp">
+        <p className="dontAcc">
+          Dont have an account? <a className="signUp">Sign up</a>
+        </p>
+      </div>
     </form>
   );
 };

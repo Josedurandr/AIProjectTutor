@@ -60,3 +60,11 @@ button:active {
   text-align: right;
   width: 100%;
 }
+
+.dontAcc {
+  color: #d7d7d7;
+}
+
+.signUp {
+  color: #20bba9;
+}
