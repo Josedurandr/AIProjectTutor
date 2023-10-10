@@ -1,7 +1,12 @@
 import "./App.css";
+import LoginForm from "./components/LoginForm";
 
 function App() {
-  return <h1 className="title">Tutor</h1>;
+  return (
+    <div className="Login">
+      <LoginForm />
+    </div>
+  );
 }
 
 export default App;
