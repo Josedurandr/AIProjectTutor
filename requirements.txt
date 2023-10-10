@@ -3,3 +3,5 @@ pymongo
 nltk
 pytest
 python-dotenv
+django
+mongoengines
