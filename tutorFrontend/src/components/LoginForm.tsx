@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./LoginForm.css";
+import { Link } from "react-router-dom";
 
 const LoginForm: React.FC = () => {
   const [username, setUsername] = useState("");
@@ -40,7 +41,7 @@ const LoginForm: React.FC = () => {
       <button type="submit">Sign in</button>
       <div className="SingUp">
         <p className="dontAcc">
-          Dont have an account? <a className="signUp">Sign up</a>
+          Dont have an account? <a className="signUp">Sign Up</a>
         </p>
       </div>
     </form>
