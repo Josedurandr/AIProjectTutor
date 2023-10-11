@@ -19,7 +19,7 @@ const ChatBot: React.FC = () => {
       // Por ahora, solo agregaré una respuesta de bot de ejemplo
       setMessages((prev) => [
         ...prev,
-        { sender: "bot", content: "¡Hola! ¿En qué puedo ayudarte hoy?" },
+        { sender: "bot", content: "conecta a backend" },
       ]);
     }
   };
