@@ -3,6 +3,7 @@ from langchain.schema import (
     HumanMessage,
     SystemMessage
 )
+from database import CTGrammar, CTUser, CTText, CTVocabulary
 from langchain.chat_models import ChatOpenAI
 import openai
 from dotenv import load_dotenv
