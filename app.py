@@ -3,12 +3,15 @@ from langchain.schema import (
     HumanMessage,
     SystemMessage
 )
-from database import CTGrammar, CTUser, CTText, CTVocabulary
 from langchain.chat_models import ChatOpenAI
 import openai
 from dotenv import load_dotenv
 load_dotenv(override=False)
+from database import client
+from gpt4all import GPT4All
 
-chat = ChatOpenAI()
-chat([HumanMessage(content="Translate this sentence from English to French: I love programming.")])
-AIMessage(content="J'adore la programmation.", additional_kwargs={}, example=False)
+
+model = GPT4All("orca-mini-3b.ggmlv3.q4_0.bin")
+output = model.generate("The capital of France is ", max_tokens=3)
+print(output)
+

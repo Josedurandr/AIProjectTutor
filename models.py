@@ -1,7 +1,4 @@
-from mongoengine import Document, fields, connect
-
-
-connect ('DATABASE_URL')
+from mongoengine import Document, fields
 
 class Grammar(Document):
     rule = fields.StringField()
@@ -22,3 +19,4 @@ class Users(Document):
     email = fields.EmailField()
     preferred_languages = fields.ListField(fields.StringField())
     skill_level = fields.DictField()
+    experience_level = fields.DictField()
