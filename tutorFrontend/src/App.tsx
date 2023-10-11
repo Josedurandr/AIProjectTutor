@@ -11,11 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LoginForm />} />
           <Route path="/ChatPage" element={<ChatBot />} />
-          {/* Asegúrate de tener un componente para ChatPage o reemplázalo con el componente que desees */}
         </Routes>
-        <div className="Login">
-          <LoginForm />
-        </div>
         <Link to="/ChatPage">Ir al Chat</Link>
       </div>
     </Router>
