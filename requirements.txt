@@ -4,4 +4,6 @@ nltk
 pytest
 python-dotenv
 django
-mongoengines
+mongoengine
+gpt4all
+djangorestframework

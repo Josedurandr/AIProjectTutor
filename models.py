@@ -1,7 +1,4 @@
-from mongoengine import Document, fields, connect
-
-
-connect ('DATABASE_URL')
+from mongoengine import Document, fields
 
 class Grammar(Document):
     rule = fields.StringField()
