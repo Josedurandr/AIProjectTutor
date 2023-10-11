@@ -35,12 +35,15 @@ const ChatBot: React.FC = () => {
       </div>
       <div className="input-container">
         <input
+          className="msg"
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="Escribe un mensaje..."
+          placeholder="Enter Text..."
         />
-        <button onClick={handleSend}>Enviar</button>
+        <button className="send" onClick={handleSend}>
+          Send
+        </button>
       </div>
     </div>
   );

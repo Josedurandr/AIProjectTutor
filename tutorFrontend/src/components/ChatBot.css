@@ -34,22 +34,23 @@
   display: flex;
 }
 
-input {
+.msg {
   flex-grow: 1;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px 0 0 5px;
+  border-radius: 27.5px 0 0 27.5px;
+  background-color: #303030;
+  color: #d7d7d7;
 }
 
-button {
+.send {
   padding: 10px;
   border: none;
   background-color: #20bba9;
-  color: #fff;
+  color: #d7d7d7;
   cursor: pointer;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 27.5px 27.5px 0;
 }
 
-button:hover {
+.send:hover {
   background-color: #17877a;
 }
