@@ -12,7 +12,6 @@ function App() {
           <Route path="/" element={<LoginForm />} />
           <Route path="/ChatPage" element={<ChatBot />} />
         </Routes>
-        <Link to="/ChatPage">Ir al Chat</Link>
       </div>
     </Router>
   );

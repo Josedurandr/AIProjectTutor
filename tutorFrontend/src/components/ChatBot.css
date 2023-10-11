@@ -1,6 +1,7 @@
 .chatbot-container {
-  max-width: 500px;
-  margin: auto;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: 0;
   border-radius: 5px;
   padding: 10px;
   font-family: "Lato", sans-serif;
