@@ -8,7 +8,6 @@ import openai
 from dotenv import load_dotenv
 load_dotenv(override=False)
 from database import client
-from models import Grammar, Vocabulary, Text, Users
 from gpt4all import GPT4All
 
 
