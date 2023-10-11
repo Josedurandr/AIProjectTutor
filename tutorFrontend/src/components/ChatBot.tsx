@@ -39,6 +39,11 @@ const ChatBot: React.FC = () => {
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
+          onKeyPress={(e) => {
+            if (e.key === "Enter") {
+              handleSend();
+            }
+          }}
           placeholder="Enter Text..."
         />
         <button className="send" onClick={handleSend}>
