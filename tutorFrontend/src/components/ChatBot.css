@@ -3,7 +3,7 @@
   margin: auto;
   border-radius: 5px;
   padding: 10px;
-  font-family: Arial, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .messages-container {
@@ -40,6 +40,7 @@
   border-radius: 27.5px 0 0 27.5px;
   background-color: #303030;
   color: #d7d7d7;
+  font-family: "Lato", sans-serif;
 }
 
 .send {
@@ -49,6 +50,7 @@
   color: #d7d7d7;
   cursor: pointer;
   border-radius: 0 27.5px 27.5px 0;
+  font-family: "Lato", sans-serif;
 }
 
 .send:hover {
