@@ -9,8 +9,12 @@ uri = os.getenv('Database_URL')
 
 client = MongoClient(uri, server_api=ServerApi('1'))
 
-DatabaseName = client.get_database('proyect-tutorIA')
-CTGrammar = DatabaseName.get_collection('Grammar')
-CTText = DatabaseName.get_collection('Text')
-CTUser = DatabaseName.get_collection('User')
-CTVocabulary = DatabaseName.get_collection('Vocabulary')
+databaseName = client.get_database('TriviaWorld')
+
+CTafrica = databaseName.get_collection('Africa')
+CTamerica = databaseName.get_collection('America')
+CTasia = databaseName.get_collection('Asia')
+CTeuropa = databaseName.get_collection('Europa')
+CToceania = databaseName.get_collection('Oceania')
+CTuser = databaseName.get_collection('User')
+

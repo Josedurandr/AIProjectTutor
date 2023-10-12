@@ -3,10 +3,11 @@ def userEntity(item) -> dict:
         "id":str(item["_id"]),
         "name": item["name"],
         "email": item["email"],
-        "preferred_languages": item["preferred_languages"],
-        "skill_level": item["skill_level"],
-        "experience_level": item["experience_level"]
+        "password": item["password"],
+        "skill_level": str(item["skill_level"]),
+        "experience_level": str(item["experience_level"])
     }
 
 def usersEntity(entity) -> list:
     return [userEntity(item) for item in entity]
+ 
