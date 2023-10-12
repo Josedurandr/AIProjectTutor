@@ -68,6 +68,7 @@ const LoginForm: React.FC = () => {
             Sign Up
           </Link>
         </p>
+        <Link to="/ChatPage">Home</Link>
       </div>
     </form>
   );
