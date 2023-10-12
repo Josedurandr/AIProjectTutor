@@ -17,11 +17,19 @@
 }
 
 .logOut {
+  padding: 15px 30px; /* Ajusta el padding según lo necesites */
+  font-size: 18px; /* Ajusta el tamaño de la fuente según lo necesites */
+  border-radius: 27.5px; /* Opcional: para hacer las esquinas del botón redondeadas */
   background-color: #ef4642;
   color: #d7d7d7;
-  border-radius: 27.5px;
-  width: 100%;
+  width: auto;
+  margin-top: 20px;
 }
+
 .logOut:hover {
   background-color: #bc3733;
+}
+
+.Pbar {
+  border-radius: 27.5px;
 }
