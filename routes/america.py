@@ -23,6 +23,6 @@ async def find_countries_by_level(email: str):
     else:    
       user_skill_level_america = user.get("skill_level", {}).get("america", 0)
 
-      countries = CTamerica.find({"difficulty": {"$lte": user_skill_level_america}})
+      countries = CTamerica.find({"difficulty_level": {"$lte": user_skill_level_america}})
       
       return americasEntity(countries)

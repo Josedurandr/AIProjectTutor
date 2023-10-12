@@ -2,7 +2,7 @@ def europaEntity(item) -> dict:
     return{
         "id":str(item["_id"]),
         "country": item["country"],
-        "difficulty": item["difficulty"],
+        "difficulty": item["difficulty_level"],
     }
     
 def europasEntity(entity) -> list:

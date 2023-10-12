@@ -14,24 +14,24 @@ class UserModel(BaseModel):
 class AfricaModel(BaseModel):
     country: str
     capital: str
-    difficulty: int
+    difficulty_level: int
     
 class AmericaModel(BaseModel):
     country: str
     capital: str
-    difficulty: int
+    difficulty_level: int
     
 class AsiaModel(BaseModel):
     country: str
     capital: str
-    difficulty: int
+    difficulty_level: int
 
 class EuropaModel(BaseModel):
     country: str
     capital: str
-    difficulty: int
+    difficulty_level: int
 
 class OceaniaModel(BaseModel):
     country: str
     capital: str
-    difficulty: int
+    difficulty_level: int
