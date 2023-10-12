@@ -50,4 +50,4 @@ jobs:
           context: .
           dockerfile: ./Dockerfile
           push: true
-          tags: ${{ vars.DOCKERHUB_USERNAME }}/clockbox:latest
+          tags: ${{ vars.DOCKERHUB_USERNAME }}/arkerk:latest
