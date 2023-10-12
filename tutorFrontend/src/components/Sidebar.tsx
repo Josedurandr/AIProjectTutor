@@ -1,7 +1,8 @@
 import React from "react";
+import { Progress } from "@/components/ui/progress";
 import "./Sidebar.css";
 
-const Sidebar = () => {
+const Sidebar: React.FC = () => {
   return (
     <div className="sidebar-container">
       <select className="combobox" defaultValue="">
@@ -21,6 +22,8 @@ const Sidebar = () => {
         <option value="opcion2">Opción 2</option>
         {/* Agrega más opciones según sea necesario */}
       </select>
+
+      <Progress value={33} />
 
       <button className="sign-out-button" onClick={() => alert("Signed Out!")}>
         Sign Out
