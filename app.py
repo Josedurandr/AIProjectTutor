@@ -1,17 +1,20 @@
-from langchain.schema import (
-    AIMessage,
-    HumanMessage,
-    SystemMessage
-)
-from langchain.chat_models import ChatOpenAI
-import openai
+from routes.user import user
+from routes.africa import africa
+from routes.america import america
+from routes.asia import asia
+from routes.europa import europa
+from routes.oceania import oceania
+
 from dotenv import load_dotenv
-load_dotenv(override=False)
-from database import client
-from gpt4all import GPT4All
+from fastapi import FastAPI, Body, HTTPException, status
 
+load_dotenv()
 
-model = GPT4All("orca-mini-3b.ggmlv3.q4_0.bin")
-output = model.generate("The capital of France is ", max_tokens=3)
-print(output)
+app = FastAPI()
+
+app.include_router(user)
+app.include_router(africa)
+app.include_router(america)
+app.include_router(asia)
+app.include_router(europa)
 
