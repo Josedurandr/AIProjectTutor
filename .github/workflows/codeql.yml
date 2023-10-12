@@ -48,6 +48,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          dockerfile: ./Dockerfile
+          dockerfile: ./dockerfile
           push: true
           tags: ${{ vars.DOCKERHUB_USERNAME }}/arkerk:latest
