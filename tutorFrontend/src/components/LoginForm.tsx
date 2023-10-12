@@ -62,12 +62,7 @@ const LoginForm: React.FC = () => {
         Sign in
       </button>
       <div className="SingUp">
-        <p className="dontAcc">
-          Dont have an account?{" "}
-          <Link to="/SignUpPage" className="signUp">
-            Sign Up
-          </Link>
-        </p>
+        <p className="dontAcc">Dont have an account? </p>
       </div>
     </form>
   );

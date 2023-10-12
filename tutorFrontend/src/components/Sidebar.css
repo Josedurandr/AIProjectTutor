@@ -4,6 +4,7 @@
   background-color: #1b1b1b;
   height: 100vh;
   box-sizing: border-box;
+  border-radius: 0px 27.5px 27.5px 0px;
 }
 
 .combobox {

@@ -38,7 +38,7 @@ const Sidebar: React.FC = () => {
       <CustomLinearProgress
         className="Pbar"
         variant="buffer"
-        value={44}
+        value={20}
         valueBuffer={100}
       />
 
