@@ -1,25 +1,31 @@
 import React, { useState } from "react";
 import "./LoginForm.css";
-import { Link } from "react-router-dom";
-import axios from "axios"; // Importa Axios
+import { Link, useNavigate } from "react-router-dom"; // Importa useNavigate
+import axios from "axios";
 
 const LoginForm: React.FC = () => {
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate(); // Agrega esta línea para usar el hook useNavigate
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Username:", username);
+    console.log("Email:", email);
     console.log("Password:", password);
 
     try {
       // Realiza una solicitud POST con Axios
       const response = await axios.post("RUTA AQUI", {
-        username,
+        email,
         password,
       });
 
-      console.log(response.data); // Imprime la respuesta en la consola
+      console.log(response.data);
+
+      if (response.data.authenticated) {
+        // Asegúrate de cambiar esto según la estructura de tu respuesta
+        navigate("/ChatPage"); // Redirige al usuario a la página de chat
+      }
     } catch (error) {
       console.error("Hubo un error al iniciar sesión:", error);
     }
@@ -28,13 +34,13 @@ const LoginForm: React.FC = () => {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="username"></label>
+        <label htmlFor="email"></label>
         <input
-          className="username"
+          className="email"
           type="text"
-          id="username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
+          id="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           placeholder="Email"
         />
       </div>
@@ -63,9 +69,6 @@ const LoginForm: React.FC = () => {
           </Link>
         </p>
       </div>
-      <Link to="/ChatPage" className="linkchat">
-        Ir al Chat
-      </Link>
     </form>
   );
 };
