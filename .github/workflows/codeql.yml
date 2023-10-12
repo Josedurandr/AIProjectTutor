@@ -11,6 +11,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment:
+      name: ENV
     env:
       DATABASE_URL: ${{ vars.DATABASE_URL }}
       API_IA: ${{ vars.API_IA }}
