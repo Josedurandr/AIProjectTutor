@@ -1,10 +1,10 @@
 .chatbot-container {
-  max-width: 500px;
-  margin: auto;
-  border: 1px solid #ccc;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: 0;
   border-radius: 5px;
   padding: 10px;
-  font-family: Arial, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .messages-container {
@@ -20,36 +20,40 @@
 }
 
 .message.user {
-  background-color: #e6f7ff;
-  color: #000;
+  background-color: #050505;
+  color: #d7d7d7;
   text-align: right;
 }
 
 .message.bot {
-  background-color: #f2f2f2;
-  color: #000;
+  background-color: #565656;
+  color: #d7d7d7;
+  border-radius: 27.5px;
 }
 
 .input-container {
   display: flex;
 }
 
-input {
+.msg {
   flex-grow: 1;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px 0 0 5px;
+  border-radius: 27.5px 0 0 27.5px;
+  background-color: #303030;
+  color: #d7d7d7;
+  font-family: "Lato", sans-serif;
 }
 
-button {
+.send {
   padding: 10px;
   border: none;
   background-color: #20bba9;
-  color: #fff;
+  color: #d7d7d7;
   cursor: pointer;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 27.5px 27.5px 0;
+  font-family: "Lato", sans-serif;
 }
 
-button:hover {
+.send:hover {
   background-color: #17877a;
 }
