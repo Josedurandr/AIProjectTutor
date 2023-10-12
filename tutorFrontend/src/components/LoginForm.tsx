@@ -1,16 +1,28 @@
 import React, { useState } from "react";
 import "./LoginForm.css";
 import { Link } from "react-router-dom";
+import axios from "axios"; // Importa Axios
 
 const LoginForm: React.FC = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Username:", username);
     console.log("Password:", password);
-    // Aquí puedes agregar la lógica para manejar el inicio de sesión, como enviar los datos a un servidor
+
+    try {
+      // Realiza una solicitud POST con Axios
+      const response = await axios.post("RUTA AQUI", {
+        username,
+        password,
+      });
+
+      console.log(response.data); // Imprime la respuesta en la consola
+    } catch (error) {
+      console.error("Hubo un error al iniciar sesión:", error);
+    }
   };
 
   return (
