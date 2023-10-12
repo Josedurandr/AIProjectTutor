@@ -50,4 +50,4 @@ jobs:
           context: .
           dockerfile: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/arkerk:latest
+          tags: gregoriomestevez12/arkerk:latest
