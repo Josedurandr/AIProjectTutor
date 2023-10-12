@@ -1,5 +1,4 @@
-from pydoc import cli
-import database
+import config.database as database
 
 def test_connection_database():
   try:
