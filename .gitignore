@@ -1,7 +1,7 @@
 venv
 .env
 node_module
-
+.venv
 # Logs
 logs
 *.log
