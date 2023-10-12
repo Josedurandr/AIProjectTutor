@@ -5,10 +5,11 @@ from typing import Optional, List, Dict
 from pydantic import BaseModel, Field
 
 class UserModel(BaseModel):
+    name: str
     email: str
     password: str
-    skill_level: dict
-    experience_level: dict
+    skill_level: dict = Field(default={"africa": 1, "america": 1, "asia": 1, "europa": 1, "oceania": 1})
+    experience_level: dict = Field(default={"africa": 0, "america": 0, "asia": 0, "europa": 0, "oceania": 0})
 
 
 class AfricaModel(BaseModel):
