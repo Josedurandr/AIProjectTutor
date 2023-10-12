@@ -1,17 +1,12 @@
-import "./ChatPage.css";
-import Chat from "./components/ChatBot";
-import Sidebar from "./components/Sidebar";
-// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import React from "react";
+import Sidebar from "./components/Sidebar"; // Asegúrate de que la ruta sea correcta
 
-function ChatPage() {
+const ChatPage: React.FC = () => {
   return (
-    <div className="Chat">
-      <Chat />
-      <div className="Sidebar">
-        <Sidebar />
-      </div>
+    <div className="chat-page">
+      <Sidebar />
     </div>
   );
-}
+};
 
 export default ChatPage;
