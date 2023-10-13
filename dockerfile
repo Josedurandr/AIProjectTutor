@@ -8,7 +8,9 @@ WORKDIR /AIProjectTutor
 COPY requirements.txt /AIProjectTutor/requirements.txt
 COPY routes/ /AIProjectTutor/routes/
 COPY app.py /AIProjectTutor/app.py
-
+COPY config/ /AIProjectTutor/config
+COPY models/ /AIProjectTutor/models
+COPY schemas/ /AIProjectTutor/schemas
 
 # Instala las dependencias de Python
 RUN pip install -r requirements.txt
