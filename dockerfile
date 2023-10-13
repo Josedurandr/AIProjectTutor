@@ -7,7 +7,7 @@ WORKDIR /AIProjectTutor
 # Copia los archivos de requerimientos y las rutas a la imagen
 COPY requirements.txt /AIProjectTutor/requirements.txt
 COPY routes/ /AIProjectTutor/routes/
-COPY APP /AIProjectTutor/app.py
+COPY app.py /AIProjectTutor/app.py
 
 
 # Instala las dependencias de Python
